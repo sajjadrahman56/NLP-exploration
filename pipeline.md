@@ -12,8 +12,23 @@ Traditionally, We(some learners) assume pipeline means starting from direct data
   - Step-03: Time and Budget, also what is possible or not
 
 ```Some Examples of NLP pipeline```
-### Case - 01
+### Case - 01 
 
 <h4>Actor Performance Prediction with the Help of YouTube Comment Sentiment Analysis</h4>
 
-![youtube sentiment](https://github.com/user-attachments/assets/c36bbb63-81c3-43b9-91ad-9567337a85df)
+![YouTube Sentiment](./images/youtube-sentiment.png)
+
+
+### Case - 02
+
+<h4>Recommand Urban Agriculture based on Google Review sentiment analysis</h4>
+
+![](./images/google.png)
+
+### Case - 03
+
+<h4>ML Course Feedback analysis based on Facebook Comment</h4>
+
+![](./images/facebook.png)
+
+Here we planing to use Bert model and Data collection by help of `FB Graph API` . Estimate time 90 days and the amount of budget $900k
