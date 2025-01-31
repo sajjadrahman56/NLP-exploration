@@ -6,21 +6,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
 
-
-# chrome_options = Options()
-# chrome_options.add_argument("--disable-cache")
-# chrome_options.add_argument("--incognito")
-
-# driver = webdriver.Chrome(options=chrome_options)
 driver = webdriver.Chrome()
-
 driver.maximize_window()
 
 root_path ='https://www.daraz.com.bd/products/tp-link-tl-wr820n-v2-300-mbps-multi-mode-wi-fi-router-i133488288.html?'
 
-
 driver.get(root_path)
-
 time.sleep(30)
 
 height = driver.execute_script('return document.body.scrollHeight')
@@ -46,7 +37,7 @@ list_items = container.find_elements(By.TAG_NAME, 'li')
 details_list = []
 
 for idx, item in enumerate(list_items, 1):
-    details_list.append(f"{idx}. {item.text}")
+    details_list.append(f"{idx} : {item.text}")
 product_information['details_list'] = details_list
 
 print(height)
