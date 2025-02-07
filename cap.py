@@ -71,7 +71,10 @@ try:
 
 except Exception as e:
     print("No CAPTCHA image found or solved:", e)
-
+    
+for i in range(0, height + 300, 30):
+    driver.execute_script(f'window.scrollTo(0, {i});')
+    time.sleep(0.5)
 # Wait and close the driver
 time.sleep(5)
 driver.quit()
